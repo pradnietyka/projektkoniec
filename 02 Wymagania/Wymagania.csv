@@ -1,0 +1,22 @@
+Lp,Wymaganie w oparciu o specyfikację,
+1,Login musi zawierać się między 2 a 8 znaków,
+2,"System operacyjny Windows 7 lub 8, 8.1 dla wersji klienckiej",
+3,W aplikacji musi być nie mniej niż 15 zadań,8
+4,Wielkość części klienckiej aplikacji ≤ 100 MB,12
+5,Blokada konta po 3 krotnym błędnym haśle,
+6,"Tryby aplikacji: Kapitana, Członka, Zawodnika",
+7,raport zbiorczy: generowanie <15 sekund,
+8,zadana w aplikacji wyswietlane losowo,
+9,W przypadku utraty połączenia sieciowego użytkownik powinien mieć dalszą możliwość wykonywania wszystkich czynności w aplikacji.,
+10,Okno aplikacji powinno mieścić się w całości na ekranie monitora o rozdzielczości 1024x768,
+11,Obciążenie aplikacji = 50 raportów jednoczeście,
+12,Login i hasło nie mogą zawierać białych znaków ani polskich znaków dialektycznych,
+13,Jezyk aplikacji - tylko jezyk polski,
+14,"Rozpakowane archiwum musi zawierać plik wykonawczy, który uruchamia aplikację oraz wszystkie niezbędne biblioteki i zasoby",
+15,"hasło musi składać się z co najmniej 20 znaków i zawierać przynajmniej jedną małą literę, jedną wielką literę, jedną cyfrę, jeden znak specjalny",
+16,Kopia zapasowa ma być tworzona po każdorazowym kliknięciu w przycisk “Znalazłem defekt”.,
+17,"w ciągu roku średnia ilość awarii w jednym
+dniu nie może być większa niż 1 ",
+18,przełączanie pomiędzy zadaniami nie może być dłuższe niż 1 sekunda,
+19,"-2 punkty za zgłoszenie defektu, który jest poprawnie działającą funkcjonalnością",
+20,0 punktów za nie zgłoszenie defektu zadaniu,

@@ -1,0 +1,81 @@
+TCID,Tytuł,Warunki wstępne,ID Kroku,Opis kroku,Oczekiwany rezultat
+1,losowe wyswietlanie zadan,działające środowisko desktopowe,1.1,uruchomienie aplikacji,zadania uszeregowane przypadkowo
+,,,1.2,zapisac kolejnosc zadań,np.. xyz
+,,,1.3,zamknięcie aplikacji,
+,,,2.1,drugie uruchomienie aplikacji,kolejnosc zadań jest inna niż w pierwszej próbie
+,,,2.2,weryfiklacja listy zadan,np.. zxy
+,,,2.3,zamknięcie aplikacji,
+AAA1,Zakładanie konta z loginem dłuższym niż 8 znaków,Użytkkownik nie jest zalogowany,1,Otwórz aplikację MrBuggy3,
+,,,2,Załóż nowe konto,
+,,,3,Wpisz login zawierający więcej niż 8 znaków,"Okno loginu zostanie poświetlone na czerwono, wyświetli się informacja o zbyt długim loginie"
+AAA3,Blokada konta po 3 krotnym wpisaniu niepoprawnego hasła,,1,Wpisnaie Loginu,Blokada konta
+,,,2,Wpisanie niepoprawnego hasła,
+,,,3,Ponowne wpisanie niepoprawnego hasła,
+,,,4,Ponowne wpisanie niepoprawnego hasła,
+AAA4,Procedura zmiany hasła przy logowaniu,"1.Uruchomiony program
+2.Użytkownik istnieje w bazie",,,
+,,,1,"Kliknij ""zapomniałem hasła""",
+,,,2,"Wpisz adres e-mail, do którego przypisano dane konto",
+,,,3,Zaloguj się na dany e-mail,
+,,,4,Kliknij w link w wiadomości,
+,,,5,Wpisz nowe hasło zgodne z polityką nadawnia hasła,
+,,,6,Powtórz to hasło,
+,,,7,Zatwierdź odpowiednim przyciskiem,"Otrzymałeś informację o pomyślnej zmianie hasła, hasło zostało zmienione - możesz się zalogować przy jego użyciu."
+AAA5,"Tworzenie kopii zapasowej po naciśnięciu ""Znalazłem defekt""",,1,"Wciśnięcie przycisku ""Znalazłem defekt""",Tworzenie kopii zapasowej
+AAA6,Utrata internetu w trakcie korzystania z aplikacji,Użytkownik jest zalogowany,1,Otwórz aplikację MrBuggy3,
+,,,2,Zgłoś defekt,Została utworzona kopia zapasowa
+,,,3,Odłącz Internet od komputera,"Aplikacja działa dalej, zmienia się status połączenia ""brak dostępu do internetu"""
+AAA7,Minimalna ilośc zadań w aplikacji,,1,Otwarcie aplikacji,
+,,,2,Liczba zadań po otwarciu aplikacji powinna być nie mniejsza niż 15,w aplikacj znajduje się min 15 zadań
+RT01,MrBuggy_Eksport_pliku,"Otwarte okno folderu o ścieżce: C:\tralala.Użytkownik zalogowany na konto: Konto-10: e-mail: jakis@tam.com, hasło: Kasza1-Manna2",1,"Naciśnij przycisk ""Zakończ""",Zakończenie testu i eksport zaszyfrowanego pliku
+,,,2,Otwórz okno folderu C:\tralala,W folderze będzie znajdować się plik importowany z MrBuggy
+,,,3,Otwórz plik binarny z zadaniami testowymi,W pliku znajdować się będą odpowiednie dane
+RT02,MrBuggy_wersja demonstracyjna_ilość zadań,"Użytkownik zalogowany, wersja demonstracyjna dostępna",1,Użytkownik sprawdza liczbę zadań dostępnych w wersji demonstracyjnej,Pojawia się 1 zadanie do rozwiązania
+RT03,Logowanie do trybu kapitana większej liczby osób,"Użytkownik zalogowany, aplikacja w wersji kosumenckiej",1,Użytkownik wybiera tryb Kapitana,Wybrany tryb zostaje zimplementowany
+,,,2,Użytkownik uruchamia aplikację w wejsji Konsumenckiej na innym urządzeniu,Aplikacja zostaje uruchomiona w wersji Konsumenckiej
+,,,3,Użytkownik wybiera tryb Kapitana w tej samej grupie testerskiej,Tryb kapitana jest nieaktywny
+RT04,"mrBuggy_Walidacja satusu konta""kapitan""",Isnieje konto: kapitan_1; e-mail:kapitan1@tester.com haslo kapitan_1!,1,Użytkownik wprowadza w pole login: kapitan_1,pole login jest uzupełnione
+,,,2,Użytkownik wprowadza w pole haslo: kapitan_1!,pole hasło jest uzupełnione
+,,,3,"Użytkownik klika przycisk ""zaloguj""",ekran powitalny urzytkownika kapitan_1 jest wyświetlony
+,,,4,"Użytkownik klika guzik ""zaraportuj bład""",Użytkownik Kapitan_1 ma możliwość zaraportowania błędu
+RT05,"mrBuggy_Walidacja satusu konta""członka załogi""",Isnieje konto: załoga1_1; e-mail:załoga1@tester.com haslo zaloga1_1!,1,Użytkownik wprowadza w pole login: załoga1_1,pole login jest uzupełnione
+,,,2,Użytkownik wprowadza w pole haslo: zaloga1_1!,pole hasło jest uzupełnione
+,,,3,"Użytkownik klika przycisk ""zaloguj""",ekran powitalny urzytkownika załoga1_1 jest wyświetlony
+,,,4,"Użytkownik klika guzik ""zaraportuj bład""",Użytkownik załoga1_1 nie ma możliwość zaraportowania błędu
+RT06,"mrBuggy_Walidacja satusu konta""zawodnik""",Isnieje konto: zawodnik_1; e-mail:zawodnik1@tester.com haslo zawodnik_1!,1,Użytkownik wprowadza w pole login: zawodnik_1,pole login jest uzupełnione
+,,,2,Użytkownik wprowadza w pole haslo: zawodnik_1!,pole hasło jest uzupełnione
+,,,3,"Użytkownik klika przycisk ""zaloguj""",ekran powitalny urzytkownika zawonik_1 jest wyświetlony
+,,,4,"Użytkownik klika guzik ""zaraportuj bład""",Użytkownik zawodnik_1 ma możliwość zaraportowania błędu
+RT07,"mrBuggy_Walidacja satusu konta ""kapitan"" - możliwość dwóch kapitanów",Isnieje konto: kapitan_1; e-mail:kapitan1@tester.com haslo kapitan_1!,1,Użytkownik wprowadza w pole login: kapitan_1,pole login jest uzupełnione
+,,,2,Użytkownik wprowadza w pole haslo: kapitan_1!,pole hasło jest uzupełnione
+,,,3,"Użytkownik klika przycisk ""zaloguj""",ekran powitalny urzytkownika kapitan_1 jest wyświetlony
+,,,4,"Użytkownik klika guzik ""zaraportuj bład""",Użytkownik Kapitan_1 ma możliwość zaraportowania błędu
+,,,5,Użytkownik loguje sie na innej maszynie na tych samych loginach i hasłach,wylogowanie pierwszego zalogowanego urzytkownika
+RT08,Sprawdzenie liczby zadań w wersji Demo,Użytkowik ma dostęp do aplikacji,,Użytkownik wyświetla zadania demo,Aplikacja wyświetla 2 zadania
+RT09,Sprawdzenie działania zadania 1 w wersji Demo,Użytkowik ma dostęp do aplikacji,,Otwarte zadanie 1,Widoczna treść zadania i kalkulator
+RT10,Sprawdzeie liczby zadań w cześci końcowej aplikacji klienckiej,Użytkowik zalogowany do aplikacji,,Użytkownik przechodzi do ostatniego zadania,Ostatnie zadania ma ID większe niż 15
+RT11,Sprawdzenie działania aplikacji klienckiej w trybie członka drużyny,Użytkownik zalogowany jako członek drużyny,,Użytkownik wybiera dowolne zadanie,"Przycisk ""Znalazłem defekt"" nieaktywny/niewidoczny"
+RT12,Ilość zadań w wersji DEMO,Użytkownik wypakowuje oraz otwiera aplikację Mr Buggy 3,1,Użytkownik uruchamia aplikację w wersji DEMO,Aplikacja nie posiada więcej zadań
+,,,2,Użytkownik rozwiązuje jedno zadanie,Aplikacja nie posiada więcej zadań
+RT13,Wysyłanie danych na część serwerową z działającym połączeniem sieciowym,"Użytkownik zalogowany, aplikacja w wersji kosumenckiej",1,Użytkownik uruchamia aplikację w trybie offline,Aplikacja zostaje uruchomiona
+,,,2,Użytkownik rozwiązuje jedno zadanie wybierając dowolną odpowiedź,Dane zostają zapisane
+,,,3,"Użytkownik wybiera opcję ""Eksportuj""",Dane zostają wyeksportowana na serwer
+,,,4,Uzytkownik wchodzi na część serwerową,Plik testowy z danymi jest dostępny dla użytkownika
+RT14,Export plików z wersji klienckiej przy aktywnym połączeniu,"Użytkownik jest zalogowany, aplikacja uruchomiona",1,Użytkownik rozwiązuje jedno zadanie wybierając dowolną odpowiedź,Dane zostają zapisane
+,,,2,Użytkownik klika w przycisk exportuj,Przycisk jest nieaktywny
+RT15,Wybór trybu przy ponownym logowaniu,"Użytkownik zalogowany, aplikacja w wersji kosumenckiej",1,Użytkownik wybiera tryb Członka Drużyny,Wybrany tryb zostaje zimplementowany
+,,,2,Użytkownik restartuje aplikację,Aplikacja zostaje zrestartowana
+RT16,MrBuggy_wersja kliencka_przesył danych,Użytkownik zalogowany jako uczestnik; wersja końcowa dostępna; połączenie sieciowe istnieje,1,"Użytkownik rozwiązuje zadania i klika przycisk ""Zakończ""",Wyświetla się okno z potwierdzeniem zakończenia pracy
+,,,2,Użytkownik potwierdza zakończenie pracy,"Zakończenie pracy z programem, przesłanie zadań do oceny"
+RT23,,"Logowanie użytkownika jako sędzia, konto istnieje; wersja serwerowa dostępna",1,Użytkownik loguje się do aplikacji,"Użytkownik zalogowany, wyświetla się lista zadań do oceny"
+RT24,,Użytkownik zalogowany jako uczestnik; wersja końcowa dostępna; brak połączenia sieciowego,1,Użytkownik rozwiązuje zadania i klika przycisk zakończ,Wyświetla się okno z potwierdzeniem zakonczneia pracy
+RT25,,Użytkownik zalogowany jako sędzia; wersja serwerowa dostępna,1,Użytkownik eksportuje zadania do części serwerowej,Zadania są wyeksportowane
+,,,2,Użytkownik importuje zadania do części serwerowej,Zadania są zaimportowane
+RT 17,mr Buggy_potwierdzanie kończenia pracy,uruchomienie aplikacji w trybie gość,1.,"Uzytkownik klika w pole ""zakończ""",pojawia się komunikat ostrzegający o zamknięciu aplikacji
+,,,2.,"Użytkownik wybiera ""tak""",pojawia sie ekran wyświetlający rezultat
+RT 18,mr Buggy_przełączanie między zadaniami,uruchomienie aplikacji w trybie gość,1.,"Użytkownik klika w pole ""następne""",pojawia sie kolejne zadanie do rozwiązania
+,,,2.,"Użytkownik klika w pole ""poprzedenie""","pojawia się zadanie, które wykonywane było krok wcześniej"
+RT19,mrBuggy_Uruchomienie,uruchamianie progaramu mrBuffy,1,urzytkownik uruchamia program mrBuggy,okno programu mrBuggy zostaje wyświetlone
+RT20,Sprawdzenie działania aplikacji klienckiej w trybie Zawodnika,Użytkownik zalogowany jako Zawodnik,1,Użytkownik wyświetla dowolne zadanie,"Przycisk ""Znalazłem defekt"" aktywny"
+RT21,Sprawdzenie dzilania plikacji klienckiej po niepodziewanym wyłączeniu,Użytkownik zalogowany w dowolnym trybie,1,Użytownik omyłkowo wyłącza aplikację,"Po włączeniu aplikacja wyświetla ekran logowania
+  Po zalogowaniu wyświetla ostatni ekran aktywności"
